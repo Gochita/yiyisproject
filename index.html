@@ -24,7 +24,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border: 2px solid #b6b5b6;
         position: relative;
-        margin-top: 200px;
+        margin-top: 950px;
       }
 
       h1 {
@@ -50,8 +50,16 @@
       }
 
       label {
-        margin-bottom: 8px;
-        color: #555;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-style: normal;
+        color: #000000;
+        position: absolute; /* Cambiado a posición absoluta */
+        top: 0; /* Colocado en la parte superior */
+        width: 100%; /* Ancho al 100% del contenedor padre */
+        margin-top: 420px; 
+        margin-right: 100px;
+        margin-left: 60px;
       }
 
       input {
@@ -91,20 +99,48 @@
         margin-bottom: 600px;
         margin-top: 200px;
       }
+
+      .luffypregunta {
+        position: absolute;
+        margin-bottom: 300px;
+        margin-top: 650px;
+      }
+
+      .button-container {
+            text-align: center;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fba1b7;
+            color: #fff;
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: medium;
+        }
+
+        .button-container a:hover {
+            background-color: #ea1179;
+        }
+
+
     </style>
     <title>Colombiano cuchi</title>
   </head>
   <body>
     <h1>Hola</h1>
     <img src="img/luffy1.jpeg" class="luffy" />
+   <b><label>✨ Tengo una pregunta ✨</label></b>
+   <img src="img/luffymentiroso.jpg" class="luffypregunta" />
     <div class="container">
       <div class="hearts">&#10084;&#10084;&#10084;</div>
-      <h2>Te invito a una cita conmigo</h2>
-      <h3>¿Aceptas?</h3>
+      <h2>¿Aceptas una cita conmigo?</h2>
       <h3>Si es así, presiona el botón</h3>
-      <form>
-        <button>Sí :D</button>
-      </form>
+      <div class="button-container">
+        <a href="https://wa.me/51924724137?text=Hola,%20cuadremos%20la%20hora%20y%20el%20dia%20uwu">Sí :D</a>
+    </div>
     </div>
   </body>
 </html>
